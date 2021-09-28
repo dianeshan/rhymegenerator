@@ -1,0 +1,72 @@
+.navwrapper{
+  z-index: 5;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-image: var(--nav-bg);
+  background-position: bottom;
+  background-size: cover;
+  --tw-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  font-family: var(--nav-font);
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.8rem 1rem;
+  padding: 0.7rem 1rem;
+}
+
+.navlistcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navlistlink {
+  display: none;
+  margin: auto;
+  padding: 0;
+  list-style: none;
+  font-size: 1.2rem;
+  text-align: center;
+  cursor: pointer;
+}  
+
+.navlogo {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+/* CSS for responsive layout */
+@media (min-width: 640px) {
+  .navigation {
+    justify-content: center;
+  }
+
+  .navlistlink {
+    display: block;
+    font-size: 14px;
+  }  
+
+  .navsignup {
+    display: none;
+  }
+}
+
+@media (min-width: 720px) {
+  .navigation {
+    justify-content: center;
+  }
+
+  .navlistlink {
+    font-size: 18px;
+  }  
+}
